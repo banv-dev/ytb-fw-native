@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Scheme
+   LastUpgradeVersion = "1610"
+   version = "1.7">
+   <BuildAction
+      parallelizeBuildables = "YES"
+      buildImplicitDependencies = "YES"
+      buildArchitectures = "Automatic">
+      <PostActions>
+         <ExecutionAction
+            ActionType = "Xcode.IDEStandardExecutionActionsCore.ExecutionActionType.ShellScriptAction">
+            <ActionContent
+               title = "Run Script"
+               scriptText = "# Type a script or drag a script file from your workspace to insert its path.&#10;#!/bin/bash&#10;&#10;# &#x110;&#x1ea3;m b&#x1ea3;o r&#x1eb1;ng &#x111;&#x1b0;&#x1edd;ng d&#x1eab;n t&#x1edb;i &#x1ee9;ng d&#x1ee5;ng l&#xe0; ch&#xed;nh x&#xe1;c&#10;APP_PATH=&quot;${CONFIGURATION_BUILD_DIR}/SimpleFirewall.app&quot;&#10;DEST_PATH=&quot;/Applications/SimpleFirewall.app&quot;&#10;&#10;# Ki&#x1ec3;m tra xem &#x1ee9;ng d&#x1ee5;ng &#x111;&#xe3; t&#x1ed3;n t&#x1ea1;i trong /Applications ch&#x1b0;a&#10;if [ -d &quot;$DEST_PATH&quot; ]; then&#10;    echo &quot;&#x1ee8;ng d&#x1ee5;ng &#x111;&#xe3; t&#x1ed3;n t&#x1ea1;i trong /Applications, x&#xf3;a &#x111;i tr&#x1b0;&#x1edb;c khi di chuy&#x1ec3;n.&quot;&#10;    rm -rf &quot;$DEST_PATH&quot;&#10;fi&#10;&#10;# Di chuy&#x1ec3;n &#x1ee9;ng d&#x1ee5;ng v&#xe0;o th&#x1b0; m&#x1ee5;c /Applications&#10;echo &quot;Di chuy&#x1ec3;n &#x1ee9;ng d&#x1ee5;ng v&#xe0;o /Applications...&quot;&#10;mv &quot;$APP_PATH&quot; &quot;$DEST_PATH&quot;&#10;&#10;echo &quot;&#x1ee8;ng d&#x1ee5;ng &#x111;&#xe3; &#x111;&#x1b0;&#x1ee3;c di chuy&#x1ec3;n th&#xe0;nh c&#xf4;ng v&#xe0;o /Applications&quot;&#10;"
+               shellToInvoke = "/bin/bash">
+               <EnvironmentBuildable>
+                  <BuildableReference
+                     BuildableIdentifier = "primary"
+                     BlueprintIdentifier = "C4B45DB422739FFF0050C59B"
+                     BuildableName = "SimpleFirewall.app"
+                     BlueprintName = "SimpleFirewall"
+                     ReferencedContainer = "container:SimpleFirewall.xcodeproj">
+                  </BuildableReference>
+               </EnvironmentBuildable>
+            </ActionContent>
+         </ExecutionAction>
+      </PostActions>
+      <BuildActionEntries>
+         <BuildActionEntry
+            buildForTesting = "YES"
+            buildForRunning = "YES"
+            buildForProfiling = "YES"
+            buildForArchiving = "YES"
+            buildForAnalyzing = "YES">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "C4B45DB422739FFF0050C59B"
+               BuildableName = "SimpleFirewall.app"
+               BlueprintName = "SimpleFirewall"
+               ReferencedContainer = "container:SimpleFirewall.xcodeproj">
+            </BuildableReference>
+         </BuildActionEntry>
+      </BuildActionEntries>
+   </BuildAction>
+   <TestAction
+      buildConfiguration = "Debug"
+      selectedDebuggerIdentifier = "Xcode.DebuggerFoundation.Debugger.LLDB"
+      selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
+      shouldUseLaunchSchemeArgsEnv = "YES"
+      shouldAutocreateTestPlan = "YES">
+   </TestAction>
+   <LaunchAction
+      buildConfiguration = "Debug"
+      selectedDebuggerIdentifier = "Xcode.DebuggerFoundation.Debugger.LLDB"
+      selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
+      launchStyle = "0"
+      useCustomWorkingDirectory = "NO"
+      ignoresPersistentStateOnLaunch = "NO"
+      debugDocumentVersioning = "YES"
+      debugServiceExtension = "internal"
+      allowLocationSimulation = "YES">
+      <PathRunnable
+         runnableDebuggingMode = "0"
+         BundleIdentifier = "vn.ai-t.apple-samplecode.SimpleFirewallCM7X4RP57U"
+         FilePath = "/Applications/SimpleFirewall.app">
+      </PathRunnable>
+      <MacroExpansion>
+         <BuildableReference
+            BuildableIdentifier = "primary"
+            BlueprintIdentifier = "C4B45DB422739FFF0050C59B"
+            BuildableName = "SimpleFirewall.app"
+            BlueprintName = "SimpleFirewall"
+            ReferencedContainer = "container:SimpleFirewall.xcodeproj">
+         </BuildableReference>
+      </MacroExpansion>
+   </LaunchAction>
+   <ProfileAction
+      buildConfiguration = "Release"
+      shouldUseLaunchSchemeArgsEnv = "YES"
+      savedToolIdentifier = ""
+      useCustomWorkingDirectory = "NO"
+      debugDocumentVersioning = "YES">
+      <BuildableProductRunnable
+         runnableDebuggingMode = "0">
+         <BuildableReference
+            BuildableIdentifier = "primary"
+            BlueprintIdentifier = "C4B45DB422739FFF0050C59B"
+            BuildableName = "SimpleFirewall.app"
+            BlueprintName = "SimpleFirewall"
+            ReferencedContainer = "container:SimpleFirewall.xcodeproj">
+         </BuildableReference>
+      </BuildableProductRunnable>
+   </ProfileAction>
+   <AnalyzeAction
+      buildConfiguration = "Debug">
+   </AnalyzeAction>
+   <ArchiveAction
+      buildConfiguration = "Release"
+      revealArchiveInOrganizer = "YES">
+   </ArchiveAction>
+</Scheme>
